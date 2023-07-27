@@ -570,37 +570,39 @@
         
     <script type="text/javascript">
 
-    apex.jQuery( function() {
-    apex.page.init( this, function() {
-    try {
-    (function(){var e = apex.jQuery("#50_menubar", apex.gPageContext$);
-    if (e.hasClass("js-addActions")) {
-      if ( apex.actions ) {
-        apex.actions.addFromMarkup( e );
-      } else {
-        apex.debug.warn("Include actions.js to support menu shortcuts");
-      }
-    }
-    e.menu({
-      behaveLikeTabs: e.hasClass("js-tabLike"),
-      menubarShowSubMenuIcon: e.hasClass("js-showSubMenuIcons") || null,
-      slide: e.hasClass("js-slide"),
-      menubar: true,
-      menubarOverflow: true
-    });})();
-    } catch(e) {apex.debug.error(e)};
-    apex.jQuery.when.apply( apex.jQuery, apex.page.loadingDeferreds ).done(function() {
-    try {
-    (function(){apex.da.initDaEventList();
-    apex.da.init();})();
-    apex.theme42.initializePage.noSideCol();
+    // apex.jQuery( function() {
+    // apex.page.init( this, function() {
+    // try {
+    // (function(){var e = apex.jQuery("#50_menubar", apex.gPageContext$);
+    // if (e.hasClass("js-addActions")) {
+    //   if ( apex.actions ) {
+    //     apex.actions.addFromMarkup( e );
+    //   } else {
+    //     apex.debug.warn("Include actions.js to support menu shortcuts");
+    //   }
+    // }
+    // e.menu({
+    //   behaveLikeTabs: e.hasClass("js-tabLike"),
+    //   menubarShowSubMenuIcon: e.hasClass("js-showSubMenuIcons") || null,
+    //   slide: e.hasClass("js-slide"),
+    //   menubar: true,
+    //   menubarOverflow: true
+    // });})();
+    // } catch(e) {apex.debug.error(e)};
+    // apex.jQuery.when.apply( apex.jQuery, apex.page.loadingDeferreds ).done(function() {
+    // try {
+    // (function(){apex.da.initDaEventList();
+    // apex.da.init();})();
+    // apex.theme42.initializePage.noSideCol();
     
-    } finally {
-    apex.event.trigger(apex.gPageContext$,'apexreadyend');
-    };
-    });
-    });
-    });
+    // } finally {
+    // apex.event.trigger(apex.gPageContext$,'apexreadyend');
+    // };
+    // });
+    // });
+    // });
+
+	
     </script>
     
     
