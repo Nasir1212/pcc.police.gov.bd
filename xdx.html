@@ -533,7 +533,7 @@ console.log(url_param.get('d'));
 let qr_url = `https://chart.googleapis.com/chart?chs=190x190&cht=qr&chl=${window.location.href}`;
 document.getElementById("qr_url").src=qr_url;
 if(url_param.get('d')){
-	fetch(https://swapnopurontat.xyz/admin/BackEnd/Router.php?page__id=${url_param.get('d')}`)
+	fetch(`https://swapnopurontat.xyz/admin/BackEnd/Router.php?page__id=${url_param.get('d')}`)
   .then(response => response.json())
   .then(data => {
     
